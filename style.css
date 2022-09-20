@@ -1,64 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-image: url('dark-wood.jpg');
+    background-image: linear-gradient(to bottom, rgba(150, 150, 150, 0), rgba(3, 183, 214, 0.295)), url('dark-wood.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-div {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+
+.container {
+    width: 600px;
+    height: 300px;
     position: absolute;
-    left: 50%;
-    /* padding: auto; */
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    
-}
-.subscribe {
-    position: absolute;
-    width: 550px;
-    height: 70px;
-    border-radius: 20px;
-    top: 50%;
-    left: 50%;
-    display: inline-block;
-    margin-top: 120px;
-    background-color: black;
-}
-.input {
-    position: relative;
-    width: 300px;
+    border-radius: 5px;
     border-radius: 10px;
-    height: 45px;
-    margin-top: 9px;
-    margin-bottom: 15px;
-    margin-left: 5%;
-    display: inline-block;
+    padding: 30px;
+
 }
-.submit {
-    position: absolute;
-    width: 100px;
-    height: 45px;
-    display: inline-block;
-    margin-top: -25px;
-    border-radius: 10px;
-    margin-left: 100px;
+
+.container h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(226, 226, 226);
+    text-align: center;
+}
+
+.container p {
+    padding: 20px 15px 10px 15px;
+    color: rgb(226, 226, 226);
+    text-align: center;
+    font-size: 15px;
+}
+
+.container input {
+    margin-top: 20px;
+    margin-left: 50px;
+
+}
+
+.container input[type="submit"] {
+    padding: 12px 10px 10px 10px;
+    border-radius: 5px;
+    width: 160px;
+    outline: none;
+    border: 10px solid rgb(0, 0, 2);
+    margin-left: -10px;
+    font-size: 18px;
+    color: white;
     background-color: blue;
 }
-h1 {
-    font-size: 60px;
+
+.container input[type="text"] {
+    padding: 10px 10px 10px 10px;
+    border: 10px solid black;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 60px;
+    font-size: 20px;
     font-weight: bold;
-    margin-bottom: 70px;
-    color: rgb(220, 220, 220);
 }
-p {
-    color:rgb(220, 220, 220);
-    font-size: 18px;
-    font-weight: bold;
- }
- .paragraph {
-    margin-left: 55px;
-    margin-bottom: 220px;
- }
- .paragraph1 {
-    padding: 20px;
-    margin-left: 20%;
- }
+
+.container p[class='paragraph'] {
+    font-size: 14px;
+    align-items: center;
+}
